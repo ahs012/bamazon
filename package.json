@@ -1,0 +1,23 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "Amazon-like Storefront w/ mySQL and Node.js",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahs012/bamazon.git"
+  },
+  "author": "ahs012",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahs012/bamazon/issues"
+  },
+  "homepage": "https://github.com/ahs012/bamazon#readme",
+  "dependencies": {
+    "inquirer": "^6.2.2",
+    "mysql": "^2.16.0"
+  }
+}
