@@ -25,6 +25,8 @@ function displayItems(){
         for(i=0; i < res.length; i++){
             console.log(res[i].item_id + "| " + res[i].product_name + " | " + res[i].price);
         }
+        console.log("---------------------------");
+        console.log("");
         cartInquire();
     })
 }
@@ -38,17 +40,18 @@ function cartInquire(){
     },{
         name : "units",
         type : "Input",
-        message : "Input desired ammount"
+        message : "Input desired ammount to purchase"
     }]).then(function(selection) {
         var query = "SELECT product_name, price, stock_quantity FROM products WHERE ?";
         connection.query(query,{item_id: selection.id}, function(err, res){
             if (err) throw err;
             if(res[0].stock_quantity < selection.units){
                 console.log("Inusfficient Quantity!");
+                cartInquire();
             }else{
-                var updateStock = res[0].stock_quantity - selection.units;
-                console.log("Ready for Purchase!");
-                console.log(updateStock);
+                var updatedStock = res[0].stock_quantity - selection.units;
+                console.log("Purchase has been made! Thank You!");
+                console.log("There are " + updatedStock + " left in stock");
             }
         })
   });
