@@ -9,4 +9,8 @@ VALUES ("Dead Cells", "Games", 15, 150),
 ("Links Awakening", "Games", 60, 999),
 ("Celeste", "Games", 15, 25), 
 ("Octopath Traveller", "Games", 60, 45),
-("Super Smash Ultimate", "Games", 60, 20)
+("Super Smash Ultimate", "Games", 60, 20),
+("Cadence of Hyrule", "Games", 26, 999),
+("Silk Song", "Games", 15, 25), 
+("Runescape", "Games", 4, 999),
+("Super Smash Melee", "Games", 45, 20)
